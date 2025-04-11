@@ -24,6 +24,8 @@ Antes de ejecutar las pruebas, asegúrate de tener los siguientes requisitos ins
 
 Los resultados de las pruebas se guardarán en el archivo `mochawesome.json` y `mochawesome.html` dentro de la carpeta `mochawesome-report`.
 
+file:///C:/Users/herre/prueba-automatizada/mochawesome-report/mochawesome.html
+
 ## Capturas de Pantalla
 
 Las pruebas automatizadas tomarán capturas de pantalla en cada paso importante y las guardarán en la carpeta `screenshots`.
