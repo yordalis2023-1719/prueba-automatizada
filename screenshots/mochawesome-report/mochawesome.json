@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-11T04:35:50.103Z",
+    "end": "2025-04-11T04:36:06.904Z",
+    "duration": 16801,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c970a6eb-41a5-4339-909e-00bdd0c4a6df",
+      "title": "",
+      "fullFile": "C:\\Users\\herre\\prueba-automatizada\\test.js",
+      "file": "\\test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+          "title": "Prueba automatizada de Google",
+          "fullFile": "C:\\Users\\herre\\prueba-automatizada\\test.js",
+          "file": "\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Prueba automatizada de Google\"",
+              "fullTitle": "Prueba automatizada de Google \"before all\" hook in \"Prueba automatizada de Google\"",
+              "timedOut": false,
+              "duration": 8819,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "25981d97-50be-4f69-bdd6-78af2b971d1a",
+              "parentUUID": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Prueba automatizada de Google\"",
+              "fullTitle": "Prueba automatizada de Google \"after all\" hook in \"Prueba automatizada de Google\"",
+              "timedOut": false,
+              "duration": 40,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "b23bbbb5-e753-42cc-bf2f-5aa828bec6dc",
+              "parentUUID": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Debería realizar una búsqueda de \"Selenium WebDriver\"",
+              "fullTitle": "Prueba automatizada de Google Debería realizar una búsqueda de \"Selenium WebDriver\"",
+              "timedOut": false,
+              "duration": 5886,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://www.google.com');\nawait driver.findElement(By.name('q')).sendKeys('Selenium WebDriver', Key.RETURN);\nawait driver.wait(until.titleContains('Selenium WebDriver'), 10000);\nconst title = await driver.getTitle();\nassert.ok(title.includes('Selenium WebDriver'));\nawait saveScreenshot(driver, 'busqueda_selenium.png');",
+              "err": {},
+              "uuid": "c5b1a400-4460-4e03-9dc3-4763dc274f91",
+              "parentUUID": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debería realizar una búsqueda de \"automatización con JavaScript\"",
+              "fullTitle": "Prueba automatizada de Google Debería realizar una búsqueda de \"automatización con JavaScript\"",
+              "timedOut": false,
+              "duration": 1521,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://www.google.com');\nawait driver.findElement(By.name('q')).sendKeys('automatización con JavaScript', Key.RETURN);\nawait driver.wait(until.titleContains('automatización con JavaScript'), 10000);\nconst title = await driver.getTitle();\nassert.ok(title.includes('automatización con JavaScript'));\nawait saveScreenshot(driver, 'busqueda_automatizacion.png');",
+              "err": {},
+              "uuid": "932e453e-09e1-4278-a842-a9f484254bb6",
+              "parentUUID": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debería verificar que el título de la página contiene \"Google\"",
+              "fullTitle": "Prueba automatizada de Google Debería verificar que el título de la página contiene \"Google\"",
+              "timedOut": false,
+              "duration": 526,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://www.google.com');\nconst title = await driver.getTitle();\nassert.ok(title.includes('Google'));\nawait saveScreenshot(driver, 'titulo_google.png');",
+              "err": {},
+              "uuid": "013aa038-4521-4759-b91d-9b33674de869",
+              "parentUUID": "d8581480-6e77-4cfd-92d7-b61c4e066ca7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c5b1a400-4460-4e03-9dc3-4763dc274f91",
+            "932e453e-09e1-4278-a842-a9f484254bb6",
+            "013aa038-4521-4759-b91d-9b33674de869"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7933,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
